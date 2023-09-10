@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+/*
+.gallery-image img {
+    width: 100%;
+}
+*/
+/*----- Header elements -----*/
+header .header-banner {
+    width: 100%;
+    height: calc(100vh - 1000px);
+    background-position: center;
+    display: table;
+}
+header h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+    letter-spacing: 3px;
+    color: #202131;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+header h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 650;
+    font-style: italic;
+    color: #202131;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+header .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+hr {
+    border: 1.5px solid #202131;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    width: fit-content;
+}
+nav ul li {
+    display: inline-block;
+    padding: 16px 24px 16px 24px;
+}
+nav ul li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 650;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*---------------------------*/
+
+/*------ Main section -------*/
+.banner {
+    background-image: url("img/banner.jpg");
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    */
+    display: inline-block;
+}
+main section {
+    padding: 10px 30px;
+}
+main h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #202131;
+    text-transform: uppercase;
+}
+p.content {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* About */
+.signature {
+    font-family:"Rock Salt";
+    font-size: 28px;
+    margin-top: -20px;
+}
+.about-content-image {
+    display: none;
+}
+
+/* Recipe gallery */
+.gallery-image img {
+    width: 100%;
+    border-radius: 50%;
+    filter: brightness(75%);
+}
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+}   
+.post-header {      
+    /*kujundus*/ 
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111111;
+    /*positsioneerimine*/ 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/*---------------------------*/
+
+
+/*----- Footer elements -----*/
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #acb5bd;
+    margin-top: 20px;
+    overflow: hidden;
+}
+footer ul {
+    float: left;
+    padding-left: 0px;
+}
+footer ul li {
+    display: block;
+}
+footer ul li p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+}
+footer ul li a {
+    color: #202131;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.footer-sm {
+    margin-top: 10px;
+    width: 50px;
+    float: right;
+}
+.footer-sm img {
+    width: 100%;
+}
+/*---------------------------*/
+
+
+
+/*----- Desktop version -----*/
+@media only screen and (min-width: 950px) {
+    main {
+        margin: 0 60px;
+    }
+    footer {
+        width: calc(100% - 120px);
+        padding: 40px 60px;
+    }
+    hr {
+        border: 1.5px solid #ffffff;
+    }
+    .banner {
+        height: calc(100vh - 250px);
+    }
+    main section {
+        padding: 20px 40px;
+    }
+    .index-about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+    .about-content-image {
+        display: table;
+        max-width: 100%;
+    }
+    .about-content-image .container {
+        background-image: url("img/kokad.jpg");
+        height: calc(100vh - 400px);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        display: -webkit-box;
+        margin-left: auto;
+    }
+    /*
+    .about-content-text {
+        margin-right: 20px;
+    } */
+
+
+}
+/*---------------------------*/
+
+/*
+.gallery-h2 {
+    font-family: "Gentium Basic", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: center;
+}
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+}   
+.post-header {      
+    /*kujundus*/ /*
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111111;
+    /*positsioneerimine*/ /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+}
+@media only screen and (min-width: 950px) {
+    header .header-banner {
+        height: calc(100vh - 400px);
+    }
+    header h1 a {
+        font-size: 80px;
+    }  
+    header h2 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    header nav ul li {
+        padding: 16px 42px;
+    }    
+    .disclaimer {
+        display: block;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 24px;
+        color: #ffffff;
+        text-transform: uppercase;
+        float: left;
+        margin: 0 80px;
+    }
+    .disclaimer span {
+        font-style: italic;
+    }
+}
+*/
